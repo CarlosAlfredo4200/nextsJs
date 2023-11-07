@@ -5,7 +5,7 @@ import Link from "next/link"
  */
 export const Users = ({ users }) => {
     return (
-        <ul >
+        <ul className="container-user" >
 
             {users.map((user) => (
                 <Link className="link" href={`/users/${user.id}`} key={user.id} >
